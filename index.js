@@ -1,6 +1,6 @@
 async function fetchData(target) {
   try {
-    const url = `https://api.weatherapi.com/v1/current.json?key=a1a84770072844b88ea142523253005&q=${target}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${target}&aqi=no`;
     const response = await fetch(url); //fetch returns a promise
     const {
       current: {
