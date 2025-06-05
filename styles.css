@@ -17,25 +17,28 @@ body {
   background-color: #01161b;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100vw;
   align-items: center;
-  height: 85%;
+  width: 100vw;
+  height: 70%;
   gap: 1.25rem;
 }
 
 .search-box {
   background-color: #2f4449;
-  height: 15%;
+  height: 30%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .location-details {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .location {
@@ -71,9 +74,33 @@ body {
   border: none;
   color: white;
   padding: 0.7rem 4rem;
+  border-radius: 0.5rem;
 }
 
 .condition-img {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+@media screen and (min-width: 756px) {
+  .weather {
+    justify-content: center;
+    flex-direction: row;
+    height: 85%;
+  }
+
+  .location-details {
+    align-items: unset;
+  }
+
+  .search-box {
+    height: 15%;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .condition-img {
+    width: 2rem;
+    height: 2rem;
+  }
 }
